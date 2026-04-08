@@ -84,6 +84,13 @@ export default {
         "bubble-in": {
           from: { opacity: "0", transform: "scale(0.8) translateY(10px)" },
           to: { opacity: "1", transform: "scale(1) translateY(0)" },
+        "slide-in-right": {
+          from: { transform: "translateX(100%)" },
+          to: { transform: "translateX(0)" },
+        },
+        "scale-in": {
+          from: { transform: "scale(0.8)", opacity: "0" },
+          to: { transform: "scale(1)", opacity: "1" },
         },
       },
       animation: {
@@ -91,6 +98,9 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         float: "float 3s ease-in-out infinite",
         "bubble-in": "bubble-in 0.4s ease-out forwards",
+        "slide-in-right": "slide-in-right 0.3s ease-out",
+        "scale-in": "scale-in 0.2s ease-out forwards",
+        "fade-in": "fade-in 0.3s ease-out",
       },
     },
   },
