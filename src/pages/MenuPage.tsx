@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Search } from "lucide-react";
 import { menuItems } from "@/data/menu";
+import AddToCartButton from "@/components/AddToCartButton";
 
 const filters = ["ทั้งหมด", "เผ็ด", "ของทอด", "สุขภาพ"];
 
@@ -20,7 +21,7 @@ const MenuPage = () => {
         <h1 className="font-heading text-3xl md:text-4xl font-bold text-center mb-2">
           เมนู<span className="text-primary">ทั้งหมด</span>
         </h1>
-        <p className="text-center font-body text-muted-foreground mb-8">เลือกเมนูที่ชอบแล้วสั่งผ่าน LINE ได้เลย</p>
+        <p className="text-center font-body text-muted-foreground mb-8">เลือกเมนูที่ชอบแล้วสั่งได้เลย</p>
 
         {/* Search */}
         <div className="max-w-md mx-auto mb-6 relative">
@@ -58,7 +59,7 @@ const MenuPage = () => {
               <div className="aspect-square overflow-hidden">
                 <img src={item.image} alt={item.name} loading="lazy" width={640} height={640} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
-              <div className="p-5 space-y-2">
+              <div className="p-5 space-y-3">
                 <div className="flex items-center gap-2 flex-wrap">
                   <h3 className="font-heading text-lg font-bold">{item.name}</h3>
                   {item.tags.map((tag) => (
@@ -68,6 +69,10 @@ const MenuPage = () => {
                   ))}
                 </div>
                 <p className="font-body text-sm text-muted-foreground">{item.description}</p>
+                <div className="flex items-center justify-between pt-1">
+                  <span className="font-heading text-xl font-bold text-primary">฿{item.price}</span>
+                  <AddToCartButton item={item} />
+                </div>
               </div>
             </div>
           ))}

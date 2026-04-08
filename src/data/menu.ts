@@ -16,6 +16,7 @@ export const menuItems: MenuItem[] = [
     image: foodKrapao,
     tags: ["ขายดี", "แนะนำ"],
     category: ["เผ็ด"],
+    price: 55,
   },
   {
     id: "2",
@@ -24,6 +25,7 @@ export const menuItems: MenuItem[] = [
     image: foodFriedrice,
     tags: ["แนะนำ"],
     category: ["ทั้งหมด"],
+    price: 65,
   },
   {
     id: "3",
@@ -32,6 +34,7 @@ export const menuItems: MenuItem[] = [
     image: foodGreencurry,
     tags: ["ขายดี"],
     category: ["เผ็ด"],
+    price: 60,
   },
   {
     id: "4",
@@ -40,6 +43,7 @@ export const menuItems: MenuItem[] = [
     image: foodPadthai,
     tags: ["แนะนำ"],
     category: ["ทั้งหมด"],
+    price: 70,
   },
   {
     id: "5",
@@ -48,6 +52,7 @@ export const menuItems: MenuItem[] = [
     image: foodTomyum,
     tags: ["ขายดี", "เผ็ด"],
     category: ["เผ็ด"],
+    price: 80,
   },
   {
     id: "6",
@@ -56,6 +61,7 @@ export const menuItems: MenuItem[] = [
     image: foodKaijeow,
     tags: [],
     category: ["ของทอด"],
+    price: 45,
   },
   {
     id: "7",
@@ -64,6 +70,7 @@ export const menuItems: MenuItem[] = [
     image: foodSomtum,
     tags: ["สุขภาพ"],
     category: ["เผ็ด", "สุขภาพ"],
+    price: 50,
   },
   {
     id: "8",
@@ -72,5 +79,6 @@ export const menuItems: MenuItem[] = [
     image: foodFriedchicken,
     tags: ["ขายดี"],
     category: ["ของทอด"],
+    price: 55,
   },
 ];

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Sparkles, MessageCircle } from "lucide-react";
 import { menuItems } from "@/data/menu";
+import AddToCartButton from "@/components/AddToCartButton";
 
 const LINE_URL = "https://lin.ee/RaIqlSp";
 
@@ -74,6 +75,10 @@ const RecommendPage = () => {
                   <div className="p-5 space-y-2">
                     <h3 className="font-heading text-lg font-bold">{item.name}</h3>
                     <p className="font-body text-sm text-muted-foreground">{item.description}</p>
+                    <div className="flex items-center justify-between pt-1">
+                      <span className="font-heading text-lg font-bold text-primary">฿{item.price}</span>
+                      <AddToCartButton item={item} />
+                    </div>
                   </div>
                 </div>
               ))}

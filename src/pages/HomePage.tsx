@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { MessageCircle, Sparkles, Send, ChefHat, Star } from "lucide-react";
 import heroFood from "@/assets/hero-food.jpg";
 import { menuItems } from "@/data/menu";
+import AddToCartButton from "@/components/AddToCartButton";
 
 const LINE_URL = "https://lin.ee/RaIqlSp";
 
@@ -98,6 +99,10 @@ const FeaturedMenu = () => (
                 ))}
               </div>
               <p className="font-body text-sm text-muted-foreground">{item.description}</p>
+              <div className="flex items-center justify-between pt-1">
+                <span className="font-heading text-lg font-bold text-primary">฿{item.price}</span>
+                <AddToCartButton item={item} />
+              </div>
             </div>
           </div>
         ))}
