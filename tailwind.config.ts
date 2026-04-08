@@ -84,6 +84,7 @@ export default {
         "bubble-in": {
           from: { opacity: "0", transform: "scale(0.8) translateY(10px)" },
           to: { opacity: "1", transform: "scale(1) translateY(0)" },
+        },
         "slide-in-right": {
           from: { transform: "translateX(100%)" },
           to: { transform: "translateX(0)" },
@@ -91,6 +92,10 @@ export default {
         "scale-in": {
           from: { transform: "scale(0.8)", opacity: "0" },
           to: { transform: "scale(1)", opacity: "1" },
+        },
+        "fade-in": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
         },
       },
       animation: {
