@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Sparkles, MessageCircle } from "lucide-react";
 import { menuItems } from "@/data/menu";
 
-const LINE_URL = "https://line.me/R/";
+const LINE_URL = "https://lin.ee/RaIqlSp";
 
 const moods = [
   { label: "หิวมาก 🍖", value: "hungry" },

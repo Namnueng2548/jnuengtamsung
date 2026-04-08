@@ -1,6 +1,6 @@
 import { MessageCircle, Sparkles } from "lucide-react";
 
-const LINE_URL = "https://line.me/R/";
+const LINE_URL = "https://lin.ee/RaIqlSp";
 
 const messages = [
   { from: "user", text: "กินอะไรดี" },

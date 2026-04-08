@@ -3,7 +3,7 @@ import { MessageCircle, Sparkles, Send, ChefHat, Star } from "lucide-react";
 import heroFood from "@/assets/hero-food.jpg";
 import { menuItems } from "@/data/menu";
 
-const LINE_URL = "https://line.me/R/";
+const LINE_URL = "https://lin.ee/RaIqlSp";
 
 const HeroSection = () => (
   <section className="relative min-h-[90vh] flex items-center overflow-hidden">
