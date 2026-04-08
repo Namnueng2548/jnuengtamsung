@@ -10,7 +10,7 @@ const navItems = [
   { label: "เกี่ยวกับ", to: "/about" },
 ];
 
-const LINE_URL = "https://line.me/R/";
+const LINE_URL = "https://lin.ee/RaIqlSp";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
