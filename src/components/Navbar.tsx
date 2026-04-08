@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
+import CartButton from "@/components/CartButton";
 
 const navItems = [
   { label: "หน้าแรก", to: "/" },
@@ -38,7 +39,8 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <CartButton />
           <a
             href={LINE_URL}
             target="_blank"
